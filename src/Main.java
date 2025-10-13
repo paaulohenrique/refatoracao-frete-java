@@ -1,3 +1,9 @@
+package src;
+
+import src.estrategias.FreteExterior;
+import src.estrategias.FreteNacional;
+import src.estrategias.FreteSp;
+
 public class Main {
     public static void main(String[] args) {
 

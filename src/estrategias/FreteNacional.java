@@ -1,3 +1,5 @@
+package src.estrategias;
+
 public class FreteNacional implements EstrategiaFrete {
 
     @Override

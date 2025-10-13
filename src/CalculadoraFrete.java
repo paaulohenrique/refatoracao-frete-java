@@ -1,3 +1,7 @@
+package src;
+
+import src.estrategias.EstrategiaFrete;
+
 public class CalculadoraFrete {
 
     private EstrategiaFrete estrategia;
