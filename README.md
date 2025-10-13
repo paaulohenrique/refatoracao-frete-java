@@ -79,9 +79,3 @@ Isso aumenta a **clareza** e **testabilidade**.
 
 ---
 
-## Resultado Esperado
-```
-Frete SP (3kg, R$50): 5.0
-Frete Exterior (2kg, R$150): 60.0
-Frete Nacional (4kg, R$80): 15.0
-```
