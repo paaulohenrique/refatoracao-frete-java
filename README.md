@@ -10,13 +10,31 @@ Melhorar a legibilidade, testabilidade e flexibilidade do cálculo de frete, eli
 O código original usava vários `if/else` aninhados para tratar cada região:
 
 ```java
-if (regiao.equals("SP")) {
-    ...
-} else if (regiao.equals("Exterior")) {
-    ...
-} else {
-    ...
+public class CalculadoraFrete {
+
+    public double calcularFrete(String regiao, double peso, double valor) {
+        double frete = 0.0;
+
+        if (regiao.equals("SP")) {
+            if (peso > 5.0) {
+                frete = 10.0 + (peso * 2.0);
+            } else {
+                frete = 5.0;
+            }
+        } else if (regiao.equals("Exterior")) {
+            if (valor > 100.0) {
+                frete = 50.0 + (peso * 5.0);
+            } else {
+                frete = 30.0;
+            }
+        } else {
+            frete = 15.0; // Nacional padrão
+        }
+
+        return frete;
+    }
 }
+
 ```
 
 ### Bad Smells Identificados
